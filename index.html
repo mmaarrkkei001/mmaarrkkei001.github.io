@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark's Projects</title>
+<style>
+  :root { --bg:#14181c; --panel:#1d2329; --line:#2e373f; --text:#e9e4da; --dim:#9aa4ad; --spark:#ff8a1f; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: clamp(2.2rem, 8vw, 3.6rem); line-height:1.05; margin:0 0 .5rem; letter-spacing:-.02em; }
+  h1::after { content:""; display:block; width:5rem; height:4px; background:var(--spark); margin-top:1rem; border-radius:2px; }
+  p.intro { color:var(--dim); max-width:34rem; }
+  h2 { font-size:1.25rem; margin:2.5rem 0 .75rem; }
+  ul { list-style:none; padding:0; margin:0; display:grid; gap:.75rem; }
+  a.card { display:block; padding:1rem 1.1rem; background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--spark); border-radius:4px; color:var(--text); text-decoration:none; }
+  a.card:hover, a.card:focus-visible { border-color:var(--spark); outline:none; }
+  a.card:focus-visible { outline:2px solid var(--spark); outline-offset:2px; }
+  a.card strong { display:block; font-size:1.05rem; }
+  a.card span { color:var(--dim); font-size:.95rem; }
+  .note { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--dim); font-size:.9rem; }
+  code { background:var(--panel); padding:.1rem .35rem; border-radius:3px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mark's projects</h1>
+  <p class="intro">My project files in one place, so I can open them from any computer at school.</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <!-- To add a project: copy one <li> line, change the link and text.
+         Put each project in its own folder next to this file, e.g. projects/meme-coin-app/index.html -->
+    <li><a class="card" href="projects/example/index.html"><strong>Example project</strong><span>Replace this with your first project</span></a></li>
+  </ul>
+
+  <p class="note">This site is public. Don't put passwords, API keys or wallet keys in any file here.</p>
+</main>
+</body>
+</html>
